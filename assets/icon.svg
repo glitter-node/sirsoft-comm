@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">SIRsoft Community Template</title>
+  <desc id="desc">Three connected community speech bubbles inside a rounded square.</desc>
+  <rect width="512" height="512" rx="112" fill="#17263D"/>
+  <path d="M113 147c0-23 19-42 42-42h202c23 0 42 19 42 42v131c0 23-19 42-42 42H233l-65 57v-57h-13c-23 0-42-19-42-42V147Z" fill="#F4F7FB"/>
+  <circle cx="190" cy="211" r="22" fill="#2B77BE"/>
+  <circle cx="256" cy="211" r="22" fill="#2B77BE"/>
+  <circle cx="322" cy="211" r="22" fill="#2B77BE"/>
+  <path d="M233 320h124c23 0 42-19 42-42v-48c16 12 26 31 26 52v72c0 23-19 42-42 42h-17v34l-44-34h-85c-18 0-34-12-39-28l35-48Z" fill="#56C4B4"/>
+</svg>

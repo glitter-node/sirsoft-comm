@@ -1,0 +1,133 @@
+{
+    "identifier": "sirsoft-comm",
+    "vendor": "Glitter.kr",
+    "name": {
+        "ko": "커뮤니티 스타터",
+        "en": "Community Starter"
+    },
+    "version": "1.0.0-beta.8",
+    "license": "MIT",
+    "description": {
+        "ko": "게시판 중심 커뮤니티를 빠르게 시작할 수 있는 범용 공개 템플릿",
+        "en": "Universal public starter template for board-centered communities"
+    },
+    "type": "user",
+    "locales": [
+        "ko",
+        "en"
+    ],
+    "author": {
+        "name": "Glitter.kr",
+        "email": "admin@glitter.kr",
+        "url": "https://glitter.kr"
+    },
+    "release_date": "2026-10-22",
+    "g7_version": ">=7.0.0-beta.2",
+    "dependencies": {
+        "modules": {
+            "sirsoft-board": ">=1.0.0-beta.2",
+            "sirsoft-page": ">=1.0.0-beta.2"
+        },
+        "plugins": {
+            "sirsoft-daum_postcode": ">=1.0.0-beta.2"
+        }
+    },
+    "assets": {
+        "css": [
+            "dist/css/components.css"
+        ],
+        "js": [
+            "dist/js/components.iife.js"
+        ],
+        "fonts": [],
+        "images": []
+    },
+    "components": {
+        "basic": [
+            "a",
+            "badge",
+            "button",
+            "checkbox",
+            "div",
+            "form",
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "hr",
+            "icon",
+            "img",
+            "input",
+            "label",
+            "li",
+            "nav",
+            "p",
+            "section",
+            "select",
+            "span",
+            "svg",
+            "table",
+            "tbody",
+            "td",
+            "textarea",
+            "th",
+            "thead",
+            "tr",
+            "ul"
+        ],
+        "composite": [
+            "header",
+            "footer",
+            "mobile-nav",
+            "rich-text-editor",
+            "image-gallery",
+            "quantity-selector",
+            "post-reactions",
+            "social-login-buttons",
+            "file-uploader",
+            "card",
+            "modal",
+            "toast",
+            "pagination",
+            "stat-card",
+            "status-badge",
+            "tab-navigation",
+            "empty-state",
+            "loading-spinner",
+            "breadcrumb",
+            "search-bar",
+            "dropdown"
+        ],
+        "layout": [
+            "container",
+            "flex",
+            "grid",
+            "section"
+        ]
+    },
+    "preview": {
+        "thumbnail": "preview/thumbnail.png",
+        "screenshots": [
+            "preview/screenshot1.png",
+            "preview/screenshot2.png"
+        ]
+    },
+    "error_config": {
+        "layouts": {
+            "401": "errors/401",
+            "404": "errors/404",
+            "403": "errors/403",
+            "500": "errors/500",
+            "503": "errors/503",
+            "maintenance": "errors/maintenance"
+        }
+    },
+    "features": {
+        "dark_mode": true,
+        "responsive": true,
+        "multi_language": true,
+        "multi_currency": false
+    },
+    "github_url": "https://github.com/glitter-node/g7-template-sirsoft-comm-comm",
+    "github_changelog_url": "https://github.com/glitter-node/g7-template-sirsoft-comm-comm/CHANGELOG.md"
+}

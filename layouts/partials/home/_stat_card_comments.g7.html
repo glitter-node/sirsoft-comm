@@ -1,0 +1,13 @@
+<partial>
+  <div class="bg-slate-50/60 dark:bg-slate-900/40 rounded-xl p-3 shadow-none border border-slate-200/40 dark:border-slate-800/60">
+    <div class="flex items-center gap-2.5">
+      <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-teal-50/70 dark:bg-teal-900/20">
+        <icon name="comments" class="w-4 h-4 text-teal-600 dark:text-teal-400"/>
+      </div>
+      <div>
+        <span class="text-lg font-semibold text-slate-800 dark:text-slate-100">{{stats?.data?.comments ?? 0 | number}}</span>
+        <p class="text-sm text-slate-500 dark:text-slate-500">$t:home.stats.comments</p>
+      </div>
+    </div>
+  </div>
+</partial>

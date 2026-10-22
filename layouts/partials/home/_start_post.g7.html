@@ -1,0 +1,52 @@
+<partial>
+  <div class="bg-white dark:bg-slate-800 rounded-xl p-4 shadow-md border border-slate-200 dark:border-slate-700">
+    <div class="flex flex-col gap-3">
+      <responsive on="desktop" class="flex flex-row items-center justify-between gap-4"/>
+      <div class="space-y-1">
+        <h2 class="text-lg font-semibold text-slate-900 dark:text-white">$t:home.start_post_title</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400">$t:home.start_post_description</p>
+      </div>
+      <div class="grid grid-cols-1 gap-2">
+        <responsive on="tablet" class="grid grid-cols-2 gap-2"/>
+        <button type="button" variant="primary" class="flex min-h-[96px] w-full items-center gap-3 rounded-lg border border-sky-500 bg-sky-600 px-5 py-4 text-left text-white shadow-sm transition-colors hover:border-sky-600 hover:bg-sky-700 dark:border-sky-400 dark:bg-sky-500 dark:hover:border-sky-300 dark:hover:bg-sky-600 cursor-pointer">
+          <on type="click">
+            <switch on="{{_global.currentUser?.uuid ? 'authenticated' : 'guest'}}">
+              <case when="authenticated">
+                <navigate path="/board/qna/write"/>
+              </case>
+              <case when="guest">
+                <navigate path="/login">
+                  <query redirect="/board/qna/write"/>
+                </navigate>
+              </case>
+            </switch>
+          </on>
+          <icon name="circle-help" class="h-6 w-6 shrink-0 text-white"/>
+          <div class="min-w-0">
+            <span class="block text-base font-semibold text-white">$t:boards.qna</span>
+            <span class="mt-1 block text-sm text-sky-50">$t:home.start_post_qna_description</span>
+          </div>
+        </button>
+        <button type="button" variant="secondary" class="flex min-h-[84px] w-full items-center gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3 text-left transition-colors hover:border-slate-300 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:hover:border-slate-600 dark:hover:bg-slate-800 cursor-pointer">
+          <on type="click">
+            <switch on="{{_global.currentUser?.uuid ? 'authenticated' : 'guest'}}">
+              <case when="authenticated">
+                <navigate path="/board/free/write"/>
+              </case>
+              <case when="guest">
+                <navigate path="/login">
+                  <query redirect="/board/free/write"/>
+                </navigate>
+              </case>
+            </switch>
+          </on>
+          <icon name="messages-square" class="h-5 w-5 shrink-0 text-slate-500 dark:text-slate-400"/>
+          <div class="min-w-0">
+            <span class="block text-sm font-semibold text-slate-900 dark:text-white">$t:boards.free</span>
+            <span class="mt-1 block text-xs text-slate-600 dark:text-slate-400">$t:home.start_post_free_description</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</partial>
